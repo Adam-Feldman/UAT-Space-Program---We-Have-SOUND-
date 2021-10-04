@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--Adam Feldman-->
+
+<html>
+
+<head>
+    <!--This is the link to my javascript file-->
+    <script src="codelogin_1.js"></script>
+    <!--This is the link to my css file-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--This is the title you see in the browser-->
+
+    <title>
+        UAT Space Page
+    </title>
+</head>
+
+<body>
+    <table class="tableTop">
+        <tr>
+            <!--tr defines a row in a table-->
+            <td><img src="UATspaceLogo-2.jpg" /></td>
+            <td>
+                <h1>
+                    UAT Space Program
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%;">
+        <col style="width: 35%;">
+        <thead>
+            <tr style="font-family: fantasy;">
+                <th>Data type</th>
+                <br><br><br>
+                <th>Reading</th>
+            </tr>
+        </thead>
+        <tbody style="font-weight: bolder;">
+            <tr style="font-style: ;" id="seconds"><td>Time Elapsed:</td><td>15 seconds</td></tr>
+            <tr id="latitude"><td>Latitude:</td><td>0</td></tr>
+            <tr id="longitude"><td>Longitude:</td><td>0</td></tr>
+            <tr id="gps_altitude"><td>GPS Altitude:</td><td>0</td></tr>
+            <tr id="bmpSensor_altitude"><td>BMP Sensor Altitude:</td><td>30383.04</td></tr>
+            <tr id="bmpSensor_pressure"><td>BMP Sensor Pressure:</td><td>2.34</td></tr>
+            <tr id="bmpSensor_temp"><td>BMP Sensor Temp:</td><td>0</td></tr>
+            <tr id="bdigSensor_temp"><td>Digital Sensor Temp:</td><td>24.12</td></tr>
+            <tr id="cssSensor_temp"><td>CSS Sensor Temp:</td><td>25</td></tr>
+            <tr id="cssSensor_eCO2"><td>CSS Sensor eCO2:</td><td>400</td></tr>
+            <tr id="cssSensor_TVOC"><td>CSS Sensor TVOC:</td><td>0</td></tr>
+            <tr id="UV"><td>UV:</td><td>0</td></tr>
+            <tr id="accelX"><td>accelX:</td><td>-0.87</td></tr>
+            <tr id="accelY"><td>accelY:</td><td>-0.02</td></tr>
+            <tr id="accelZ"><td>accelZ:</td><td>9.61</td></tr>
+            <tr id="gyroX"><td>gyroX:</td><td>0.13</td></tr>
+            <tr id="gyroY"><td>gyroY:</td><td>0.57</td></tr>
+            <tr id="gyroZ"><td>gyroY:</td><td>-0.24</td></tr>
+            <tr id="magneticX"><td>magneticX:</td><td>4.66</td></tr>
+            <tr id="magneticY"><td>magneticY:</td><td>0.01</td></tr>
+            <tr id="magneticZ"><td>magneticZ:</td><td>-0.4</td></tr>
+
+
+
+        </tbody>
+    </table>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="start();" class="funWithButtons" id="startButton">Start</button>
+    <button class="funWithButtons" onclick="stop();" id="stopButton" disabled=true>Stop</button>
+    <br>
+    <br>
+    <button onclick="play()" class="crapsWithButtons">play craps</button>
+    <br>
+    <h3>Craps results</h3>
+    <div id="die1Res">Die1 results here...</div>
+    <div id="die2Res">Die2 results here...</div>
+    <div id="sumRes">Sum results here...</div>
+    <div id="finalRes">Final results here...</div>
+
+</body>
+
+</html>
